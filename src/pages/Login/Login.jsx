@@ -1,7 +1,24 @@
 import Lottie from "lottie-react";
 import animation from '../../assets/68312-login.json';
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { AuthContext } from "../../provider/AuthProvider";
 const Login = () => {
+    const{signIn}=useContext(AuthContext);
+
+    const handleLogIn=event=>{
+        event.preventDefault();
+        const form=event.target;
+        const email=form.email.value;
+        const password=form.password.value;
+        signIn(email,password)
+        .then(result=>{
+            const user=result.user;
+            console.log(user);
+        })
+        .catch(error=>console.log(error));
+
+    }
     return (
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center md:mt-12">
                 <div>
@@ -11,7 +28,7 @@ const Login = () => {
                     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                         <div className="card-body">
                         <h2 className="text-3xl text-center text-blue-800 font-bold my-5">Login Please</h2>
-                            <form>
+                            <form onSubmit={handleLogIn}>
                                 <div className="form-control">
                                     <label className="label">
                                         <span className="label-text">Email</span>
