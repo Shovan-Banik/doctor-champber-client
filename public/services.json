@@ -1,0 +1,51 @@
+[
+    {
+      "_id": 1,
+      "image": "https://i.postimg.cc/L5hW9Tj1/pic1.jpg",
+      "title": "General Check-up",
+      "description": "Comprehensive medical examination to assess your overall health.",
+      "price": 100,
+      "additionalOption": "Express Check-up (additional $50)"
+    },
+    {
+      "_id": 2,
+      "image": "https://i.postimg.cc/1zc2J49f/pic2.jpg",
+      "title": "Dental Cleaning",
+      "description": "Professional dental cleaning to maintain your oral hygiene.",
+      "price": 80,
+      "additionalOption": "Teeth Whitening (additional $50)"
+    },
+    {
+      "_id": 3,
+      "image": "https://i.postimg.cc/GhtRtPbz/pic3.jpg",
+      "title": "Eye Examination",
+      "description": "Thorough examination to evaluate your vision and eye health.",
+      "price": 120,
+      "additionalOption": "Contact Lens Fitting (additional $30)"
+    },
+    {
+      "_id": 4,
+      "image": "https://i.postimg.cc/0QGkG94f/pic4.jpg",
+      "title": "Vaccination",
+      "description": "Immunization against common diseases to protect your health.",
+      "price": 60,
+      "additionalOption": "Flu Shot (additional $20)"
+    },
+    {
+      "_id": 5,
+      "image": "https://i.postimg.cc/rF3BpvnF/pic5.jpg",
+      "title": "Skin Consultation",
+      "description": "Specialized evaluation of skin conditions and recommended treatments.",
+      "price": 150,
+      "additionalOption": "Chemical Peel (additional $80)"
+    },
+    {
+      "_id": 6,
+      "image": "https://i.postimg.cc/xC9D2Msv/pic6.jpg",
+      "title": "Nutrition Counseling",
+      "description": "Personalized dietary guidance to improve your overall well-being.",
+      "price": 90,
+      "additionalOption": "Meal Plan Development (additional $40)"
+    }
+  ]
+  
