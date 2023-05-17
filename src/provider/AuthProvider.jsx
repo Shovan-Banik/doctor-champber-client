@@ -20,6 +20,7 @@ const AuthProvider = ({children}) => {
     }
 
     const logOut=()=>{
+        setLoading(true);
         return signOut(auth);
     }
 
@@ -29,7 +30,9 @@ const AuthProvider = ({children}) => {
             console.log('current user',currentUser);
             setLoading(false);
         });
-        return unsubscribe();
+        return ()=>{
+            return unsubscribe();
+        }
     },[])
 
     const authInfo={
